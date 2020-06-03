@@ -71,3 +71,5 @@ source 'https://rails-assets.org' do
 end
 
 gem 'devise', '~> 4.2'
+
+gem "figaro"

@@ -93,4 +93,14 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   config.action_mailer.default_url_options = { host: 'learning-devise-powai-leung.herokuapp.com' }
+
+  ActionMailer::Base.smtp_settings = {
+    address: 'smtp.gmail.com', 
+    port: '587',
+    domain: 'gmail.com',
+    user_name: ENV['GMAIL_ADDRESS'],
+    password: ENV['GMAIL_PASSWORD'],
+    authentication: 'plain',
+    enable_starttls_auto: true
+  }
 end

@@ -7,10 +7,10 @@ Rails.application.configure do
     address: "smtp.gmail.com", 
     port: 587,
     domain: "gmail.com",
-    authentication: "plain",
+    user_name: "californiaautocenter316@gmail.com",
+    password: "Hillcrest94030",
+    authentication: 'plain',
     enable_starttls_auto: true,
-    user_name: ENV['GMAIL_ADDRESS'],
-    password: ENV['GMAIL_PASSWORD']
   }
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development
